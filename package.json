@@ -1,0 +1,17 @@
+{
+  "name": "Test CS",
+  "version": "1.0.0",
+  "description": "Test CS Application",
+  "main": "index.js",
+  "scripts": {
+    "run_tests":"npx playwright test",
+    "open_tests":"npx playwright test --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "1.47.0",
+    "@types/node": "22.5.4"
+  }
+}
