@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "ESNext", // Use the latest ECMAScript features
+        "module": "commonjs", 
+        "moduleResolution": "Node",
+        "sourceMap": true,
+        "outDir": "../tests-out",
+        "strict": true, // Enable all strict type-checking options
+        "types":["node","playwright"], // Include Node.js and Playwright types
+        "resolveJsonModule": true, // Allow importing JSON files
+    },
+    "include": [
+        "tests/**/*.ts", // Include all TypeScript files in the tests directory
+        "src/**/*.ts" // Include all TypeScript files in the source directory
+    ],
+    "exclude": [
+        "node_modules", // Exclude node_modules for compilation
+        "tests-out" // Exclude output directory to avoid conflicts
+    ]
+}

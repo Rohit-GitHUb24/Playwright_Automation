@@ -1,17 +1,23 @@
 {
-  "name": "Test CS",
+  "name": "playwright_automation",
   "version": "1.0.0",
-  "description": "Test CS Application",
   "main": "index.js",
   "scripts": {
-    "run_tests":"npx playwright test",
-    "open_tests":"npx playwright test --ui"
+    "pretest": "tsc --incremental -p tsconfig.json",
+    "test": "playwright test -c tests-out",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "devDependencies": {
-    "@playwright/test": "1.47.0",
-    "@types/node": "22.5.4"
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.29"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
   }
 }
